@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRG - Val Sena</title>
+    <link rel="stylesheet" href="estilo/index.css">
+    <link rel="stylesheet" href="estilo/cabecalho.css">
+    <link rel="stylesheet" href="estilo/rodape.css">
+    <link rel="shortcut icon" href="imagens/logo-trg-sem-nome.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--NAV BAR RESPONSIVO-->
+    <header class="header">
+        <a href="index.html">
+            <img src="imagens/logo-trg-com-nome.svg" alt="Logo TRG">
+        </a>
+        <div class="navigation">
+
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburguer"></div>
+
+            <ul class="menu">
+                <li><a href="index.html"><img class="img-logo-mobile" src="imagens/logo-trg-sem-nome.svg"
+                            alt="Logo TRG"></a></li>
+                <li><a class="link-navigation" href="estrutura/o-que-e-trg.html">O que é TRG?</a></li>
+                <li><a class="link-navigation" href="estrutura/agendar.html">Agendar</a></li>
+                <li><a class="link-navigation" href="estrutura/sobre-mim.html">Sobre mim</a></li>
+                <li><a class="link-navigation" href="estrutura/entrar-na-conta.html">Entrar</a></li>
+                <li>
+                    <a id="pai-logo-thinkbox" href="https://allthinkbox.github.io/thinkbox/" target="_blank" rel="external">
+                        <img id="logo-thinkbox-mobile" class="img-logo-mobile" src="imagens/logo-thinkbox.png"
+                            alt="Logo thinkbox">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--FIM NAV BAR RESPONSIVO-->
+
+    <!-- BANNER "TERAPIA DE REPROCESSAMENTO GENERATIVO"-->
+    <picture>
+        <source media="(max-width: 900px)" srcset="imagens/banner-medio.png" type="image/png">
+        <img class="banner-img" src="imagens/banner.png" alt="">
+    </picture>
+    <!-- FIM BANNER "TERAPIA DE REPROCESSAMENTO GENERATIVO"-->
+
+    <!-- HOME MOBILE-->
+    <main class="sessao-principal">
+        <div class="quadrado">
+            <h1>Terapia Online</h1>
+            <p>A Técnica TRG é uma terapia breve focada e orientada para a resolução de problemas emocionais e
+                psicossomáticos, libertando a pessoa de traumas, fobias, compulsões, ansiedade, depressão, crises de
+                pânico pela raiz, que quando acumuladas ficam gravadas no cérebro criando bloqueios e limitações.</p>
+            <p>O reprocessamento generativo trabalha todo o psiquismo de forma com que a pessoa não fica mais paralisada
+                nas dores, reestruturando assim toda a história de traumas desde o nascimento até o momento presente,
+                trabalhando também medos, anseios relacionados ao futuro.</p>
+            <div class="btn-saiba-mais"><a href="estrutura/o-que-e-trg.html">Saiba mais</a></div>
+        </div>
+        <div class="elipse"></div>
+    </main>
+    <!-- FIM HOME MOBILE-->
+    
+    <!--HOME DESKTOP-->
+    <main class="sessao-principal-desktop">
+        <img src="imagens/backimg-index-main.png" alt="">
+        <div class="container-textos-desktop">
+             <h1>Terapia Online</h1>
+             <p>A TRG é uma terapia breve focada e orientada para a resolução de problemas emocionais e
+                 psicossomáticos, libertando a pessoa de traumas, fobias, compulsões, ansiedade, depressão, crises de
+                 pânico pela raiz, que quando acumuladas ficam gravadas no cérebro criando bloqueios e limitações.</p>
+             <p>O reprocessamento generativo trabalha todo o psiquismo de forma com que a pessoa não fica mais paralisada
+                 nas dores, reestruturando assim toda a história de traumas desde o nascimento até o momento presente,
+                 trabalhando também medos, anseios relacionados ao futuro.</p>
+             <div class="btn-saiba-mais"><a href="estrutura/o-que-e-trg.html">Saiba mais</a></div>
+        </div>
+     </main>
+    <!--FIM HOME DESKTOP-->
+
+    <!--DEPOIMENTOS-->
+    <section class="depoimentos">
+
+        <h2>Depoimentos</h2>
+        <img class="underline" src="imagens/underline-depoimentos.svg" alt="">
+        <div class="slides">
+            <!--Radios buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <!--Fim Radios buttons-->
+
+            <!--Slide videos-->
+            <div class="slide first">
+                <iframe width="250" height="450" src="https://www.youtube.com/embed/OG4pStKnkjY" title="Depoimento"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="slide">
+                <iframe width="250" height="450" src="https://www.youtube.com/embed/og153dF6PB4" title="depoimento1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <!--Fim Slide videos-->
+
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+            </div>
+            <!--Fim Navigation auto-->
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+        </div>
+
+    </section>
+    <!--FIM DEPOIMENTOS-->
+
+    <!-- AGENDAR (HOME) -->
+    <section class="agendar">
+        <!--INFORMAÇÕES PARA USUÁRIOS COM DÚVIDAS -->
+        
+            <aside>
+                <h3>Quer saber melhor sobre o que é a TRG?</h3>
+                <p>Ficou com alguma dúvida? Quer entender melhor <strong>o que é, como funciona e quais os benefícios da
+                        TRG?</strong><a href="estrutura/o-que-e-trg.html"> Clique aqui</a> e confira o meu artigo explicando
+                    sobre ou, se preferir, entre em contato comigo. 😉</p>
+                <!--BOTÃO PARA O WHATSAPP DA CLIENTE -->
+                <a class="zap-link" href="https://api.whatsapp.com/send?phone=5511974429799" target="_blank" rel="external">
+                    <p>(Clique em mim!)</p>
+                    <img class="contato-terapeuta" src="imagens/whatsapp-aside.png" alt="Contato da terapeuta">
+                </a>
+            </aside>
+            <img class="img-motivação" src="imagens/index-motivacional.png" alt="">
+            <div class="textao-do-agendar">
+                <p>
+                    “Nos últimos anos tenho passado por situações desafiadoras na minha vida e, com isso, acabei perdendo de
+                    vez o controle das minhas emoções e deixando o medo me dominar.
+                </p>
+                <p>
+                    Eu passei por momentos muito difíceis, e acabei me prejudicando no trabalho, nos estudos e na vida
+                    pessoal. Afastei muitos amigos porque estava totalmente incapaz de manter alguém por perto. Me vi no
+                    fundo do poço e completamente sozinha. E foi aí que eu percebi que não conseguiria sair daquela situação
+                    sozinha
+                </p>
+                <p>
+                    Ao procurar pela terapia pela terceira vez, sem esperanças, mas também sem enxergar outra saída para
+                    mim, recebi uma indicação e conheci minha terapeuta da TRG, que se propôs a me ajudar e me falou sobre
+                    como funcionava a terapia e, apesar das dúvidas sobre o método, decidi arriscar.
+                </p>
+                <p>
+                    E foi a melhor coisa que eu poderia ter feito por mim. Um método simples e rápido, e tão eficaz. Em
+                    poucos meses eu consegui organizar o meu passado, que vivia tão turbulento em minha memória. Foi como
+                    montar um quebra-cabeças com milhões de peças.
+                </p>
+                <p>
+                    Meu passado era uma sombra enorme em minha vida, por eu ter sido abandonada pelos meus pais, e ter sido
+                    criada por outra família. Sim, recebi muito amor dos meus pais de coração, mas conviva com o sentimento
+                    de rejeição pelo abandono.
+                </p>
+                <p>
+                    Hoje, graças à TRG, mudei a forma de encarar o meu passado, o meu presente e o meu futuro. Mudei
+                    completamente a minha forma de agir e reagir às situações, e hoje me considero uma pessoa segura de mim
+                    mesma, confiante e realmente feliz.
+                </p>
+                <p>
+                    TRG é vida! Eu nunca me senti tão bem e certa de que posso ser feliz!”
+                </p>
+            </div>
+            <!--BOTÃO DO FIM DA PÁGINA DIRECIONANDO PARA A PÁGINA "AGENDAR"-->
+            <div class="agendar-index">
+                <a href="estrutura/agendar.html">Agendar</a>
+            </div>
+    </section>
+    <!-- FIM AGENDAR (HOME) -->
+
+    <!-- AGENDAR (HOME) - DESKTOP-->
+    <section class="agendar-desktop">
+        <!--INFORMAÇÕES PARA USUÁRIOS COM DÚVIDAS -->
+        <img class="img-motivação" src="imagens/index-motivacional.png" alt="Relato de uma paciente sobre a TRG">
+        
+        <div class="container-agendamento-home">
+            <aside>
+                <h3>Quer saber melhor sobre o que é a TRG?</h3>
+                <p>Ficou com alguma dúvida? Quer entender melhor <strong>o que é, como funciona e quais os benefícios da
+                        TRG?</strong><a href="estrutura/o-que-e-trg.html"> Clique aqui</a> e confira o meu artigo explicando
+                    sobre ou, se preferir, entre em contato comigo. 😉</p>
+                <!--BOTÃO PARA O WHATSAPP DA CLIENTE -->
+                <a class="zap-link" href="https://api.whatsapp.com/send?phone=5511974429799" target="_blank" rel="external">
+                    (Clique em mim!)
+                    <img class="contato-terapeuta" src="imagens/whatsapp-aside.png" alt="Contato da terapeuta">
+                </a>
+            </aside>
+            <div class="textao-do-agendar">
+                <p>
+                    “Nos últimos anos tenho passado por situações desafiadoras na minha vida e, com isso, acabei perdendo de
+                    vez o controle das minhas emoções e deixando o medo me dominar.
+                </p>
+                <p>
+                    Eu passei por momentos muito difíceis, e acabei me prejudicando no trabalho, nos estudos e na vida
+                    pessoal. Afastei muitos amigos porque estava totalmente incapaz de manter alguém por perto.
+                </p>
+            </div>
+            <!--BOTÃO DO FIM DA PÁGINA DIRECIONANDO PARA A PÁGINA "AGENDAR"-->
+        </div>
+    </section>
+    <div class="txt-responsivo-desktop">
+        <p> Me vi no
+            fundo do poço e completamente sozinha. E foi aí que eu percebi que não conseguiria sair daquela situação
+            sozinha.</p>
+            <p>
+                Ao procurar pela terapia pela terceira vez, sem esperanças, mas também sem enxergar outra saída para
+                mim, recebi uma indicação e conheci minha terapeuta da TRG, que se propôs a me ajudar e me falou sobre
+                como funcionava a terapia e, apesar das dúvidas sobre o método, decidi arriscar.
+            </p>
+            <p>
+                E foi a melhor coisa que eu poderia ter feito por mim. Um método simples e rápido, e tão eficaz. Em
+                poucos meses eu consegui organizar o meu passado, que vivia tão turbulento em minha memória. Foi como
+                montar um quebra-cabeças com milhões de peças.
+            </p>
+            <p>
+                Meu passado era uma sombra enorme em minha vida, por eu ter sido abandonada pelos meus pais, e ter sido
+                criada por outra família. Sim, recebi muito amor dos meus pais de coração, mas conviva com o sentimento
+                de rejeição pelo abandono.
+            </p>
+            <p>
+                Hoje, graças à TRG, mudei a forma de encarar o meu passado, o meu presente e o meu futuro. Mudei
+                completamente a minha forma de agir e reagir às situações, e hoje me considero uma pessoa segura de mim
+                mesma, confiante e realmente feliz.
+            </p>
+            <p>
+                TRG é vida! Eu nunca me senti tão bem e certa de que posso ser feliz!”
+            </p>
+            <div class="agendar-index">
+                <a href="estrutura/agendar.html">Agendar</a>
+            </div>
+    </div>
+    <!--AGENDAR (HOME) - DESKTOP-->
+
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <div class="icones">
+            <a href="mailto:valdeneidepereira925@gmail.com" target="_blank" rel="external"><img src="imagens/ico-gmail.png" alt="Ícone do Gmail"></a>
+            <a href="https://www.instagram.com/valdeneide_sena/" target="_blank" rel="external"><img src="imagens/ico-instagram.png" alt="Ícone do Instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=5511974429799" target="_blank" rel="external"><img src="imagens/ico-whatsapp.png" alt="Ícone do WhatsApp"></a>
+        </div>
+        <div class="texto">
+            <p>Site desenvolvido por <a id="thinkbox" href="https://allthinkbox.github.io/thinkbox/" target="_blank" rel="external"><strong>thinkbox</strong></a> - 2023</p>
+        </div>
+        <div class="logo-footer">
+            <a href="../index.html"><img src="imagens/logo-trg-sem-nome.svg" alt="Logo TRG"></a>
+        </div>
+    </footer>
+    <!--FIM RODAPÉ-->
+    <script src="dinamica/depoimentos.js"></script>
+</body>
+
+</html>

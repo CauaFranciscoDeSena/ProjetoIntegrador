@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    /* variáveis das fontes utilizadas no projeto: 
+        font-padrao -> para textos em geral; 
+        font-destaque -> para títulos de primeiro nível (h1); 
+        font-especial -> para botões e links; 
+        font-thinkbox -> para representar o projeto. */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-destaque: 'Lobster', cursive;
+    --font-especial: 'Poppins', sans-serif;
+    --font-thinkbox: 'Dune Rise', sans-serif;
+
+    /* variáveis para representar as cores do projeto
+    com base na paleta de cores, que está no figma: os números são em ordem crescente das cores da esquerda para a direita, de cima para baixo, conforme a imagem da paleta de cores que está no figma. */
+    --cor01: #7F3E98;
+    --cor02: #AC81BC;
+    --cor03: #CDB4D7;
+    --cor04: #F1F1F1;
+    --cor05: #CC6FAD;
+}
+
+@font-face {
+    font-family: 'Dune Rise';
+    src: url(../fontes/Dune_Rise.otf) format('opentype');
+    font-weight: normal;
+}
+
+@media (min-width:320px){
+    body{
+        background-color: var(--cor04);
+        font-family: var(--font-padrao);
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+/*PARTE INCOMPLETA -- FALTA FOTO DO LADO DO TITULO*/
+    main{
+        background-color: #fff;
+        padding: 40px 30px 20px ;
+    }
+
+    
+
+    h1{
+        font-family: var(--font-destaque);
+        font-size: 1.7rem;
+        color: var(--cor01);
+        margin: 30px auto;
+    }
+
+    strong{
+        color: #7F3E98;
+    }
+
+    article p{
+        margin: 50px 0;
+    }
+    .credenciais-trg{
+        position: absolute;
+        top: 116px;
+        right: 10px;
+        width: 130px;
+        height: 80px;
+    }
+    .credenciais-trg img{
+        width: 50%;
+        margin: 0 25px;
+    }
+    .credenciais-trg p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+/* CARDS QUE IRÃO SER O CARROSSEL*/
+
+/* TÍTULO DA "SEÇÃO ATENDIMETOS" E DA "SEÇÃO CONTATOS"*/
+    h2{
+        font-family: var(--font-destaque);
+        font-size: 2rem;
+        text-align: center;
+        color: var(--cor01);
+        padding: 20px 0;
+    }
+    
+/*SEÇÃO ATENDIMETOS*/
+    .atendimento{
+        background-color: #fff;
+        padding: 40px 30px 20px;
+    }
+    #central-line{
+        text-align: center;
+    }
+    .atendimento p{
+        padding: 15px 0px;
+    }
+    .atendimento img{
+        width: 100%;
+    }
+
+/*CONFIGURAÇÃO DA LISTA DE TRANSTORNOS*/
+    .transtornos-emocionais{
+        display: flex;
+        justify-content: center;
+        align-items: first baseline;
+    }
+    .lista-transtornos-emocionais{
+        list-style-position: inside;
+        margin: auto auto 30px;
+    }
+    .lista-transtornos-emocionais li{
+        margin:10px 5px 3px 0;
+    }
+    
+/*SEÇÃO "CONTATOS"*/
+    .atendimento{
+        background-color: #fff;
+        padding: 40px 30px 20px;
+    }
+    .atendimento p{
+        padding: 15px 0px;
+    }
+    .contato{
+        width: 250px ;
+        margin: 80px auto;
+        padding: 20px 0;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    }
+    .gmail-btn-contato, .insta-btn-contato, .whats-btn-contato{
+        width: 175px;
+        height: 33px;
+        margin: 12px 0 12px 39px;
+        background-color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .gmail-btn-contato{
+        border: 1px solid #C71610;
+        color: #C71610;
+        transition: 1s;
+    }
+
+    .gmail-btn-contato:hover{
+        background-color: #C71610;
+        color: white;
+    }
+
+    .insta-btn-contato{
+        border: 1px solid #E1306C;
+        color: #E1306C;
+        transition: 1s;
+    }
+
+    .insta-btn-contato:hover{
+        background-color: #E1306C;
+        color: white;
+    }
+    .whats-btn-contato{
+        border: 1px solid #25D366;
+        color: #25D366;
+        transition: 1s;
+    }
+
+    .whats-btn-contato:hover{
+        background-color: #25D366;
+        color: white;
+    }
+
+}
+@media (min-width:480px) {
+    main, .atendimento{
+        padding: 40px 50px 50px;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    article p{
+        margin: 70px auto 10px;
+    }
+    .credenciais-trg{
+        width: 200px;
+        top: 116px;
+        right: 10px;
+    }
+    .credenciais-trg img{
+        width: 80px;
+        height: 80px;
+        margin: 0 60px;
+    }
+    .atendimento p{
+        margin: 20px 0;
+    }
+    .transtornos-emocionais{
+        padding: 0;
+        justify-content: space-around;
+    }
+    .lista-transtornos-emocionais{
+        margin: 0 20px 0;
+    }
+    .lista-transtornos-emocionais li{
+        margin:10px 0;
+    }
+    .contato{
+        width: 250px ;
+        margin: 80px auto;
+    }
+    .gmail-btn-contato, .whats-btn-contato, .insta-btn-contato{
+        margin: 12px 0 12px 39px;    
+    }
+}
+@media (min-width:600px) {
+    main, .atendimento{
+        padding: 40px 70px 50px;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    article p{
+        margin: 70px auto;
+    }
+    .credenciais-trg{
+        width: 200px;
+        top: 116px;
+        right: 40px;
+    }
+    .credenciais-trg img{
+        width: 80px;
+        height: 80px;
+        margin: 0 60px;
+    }
+    .transtornos-emocionais{
+        padding: 0;
+        justify-content: center;
+    }
+    .lista-transtornos-emocionais{
+        margin: 0 20px 0;
+    }
+    .lista-transtornos-emocionais li{
+        margin:10px 0;
+    }
+    .contato{
+        width: 250px ;
+        margin: 80px auto;
+    }
+    .gmail-btn-contato, .whats-btn-contato, .insta-btn-contato{
+        margin: 12px 0 12px 39px;    
+    }
+}
+@media (min-width:801px) {
+    h1{
+        margin: 60px 30px;
+    }
+    article p{
+        margin: 100px 30px 20px;
+    }
+    .credenciais-trg{
+        width: 200px;
+        height: auto;
+        top: 120px;
+        right: 60px;
+    }
+    .credenciais-trg img{
+        width: 100px;
+        height: 100px;
+        margin: 0 50px;
+    }
+
+    .atendimento{
+        margin: 0;
+        padding:20px 60px;
+        display: grid;
+        grid-template-columns: 1.3fr 1.7fr;
+        grid-template-rows: 120px 200px 1200px;
+        grid-template-areas: "title imagem"
+                            "listinha imagem"
+                            "textgiga textgiga"
+    }
+    .transtornos-emocionais{
+        margin: 20px 0;
+        justify-content: center;
+    }
+    .atendimento h2{
+        font-size: 2.3rem;
+        text-align: center;
+        grid-area: title;
+    }
+    .textogiga{
+        padding:0;
+        margin:40px auto 0;
+        grid-area: textgiga;
+    }
+    #central-line{
+        text-align: center;
+        margin: 80px 0;
+        grid-area: title;
+    }
+    .lista-transtornos-emocionais {
+        grid-area: listinha;
+        margin: 20px 0 auto;
+    }
+    .lista-transtornos-emocionais li{
+        margin: 0 10px 10px 0;
+    }
+    .atendimento img{
+        width: 400px;
+        margin: 50px 100px 0 0;
+        grid-area: imagem;
+    }
+    
+}
+@media (min-width:1025px) {
+    h1{
+        font-size: 2.4rem;
+        margin: 60px 30px;
+    }
+    article p{
+        margin: 100px 30px 20px;
+    }
+    .credenciais-trg{
+        width: 300px;
+        right: 18px;
+    }
+    .credenciais-trg img{
+        width: auto;
+        height: 150px;
+        margin: 0 90px;
+    }
+    .carrossel{
+        justify-content: space-around;
+    }
+
+    .atendimento{
+        padding: 0;
+        grid-template-columns: 1.4fr 1.6fr;
+        grid-template-rows: 120px 200px 1100px;
+    }
+    .atendimento h2{
+        font-size: 2.3rem;
+        margin: 20px 60px 20px;
+    }
+    .textogiga{
+        width: 900px;
+    }
+
+    .lista-transtornos-emocionais {
+        margin: 20px 0 auto;
+    }
+    .atendimento img{
+        width: 450px;
+        margin: 60px 0;
+    }
+
+    
+}
+@media (min-width:1251px) {
+    body{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 3.4rem;
+        margin: 60px 30px;
+    }
+    article p{
+        margin: 100px 30px 20px;
+    }
+    .credenciais-trg{
+        width: 300px;
+        right: 40px;
+        top: 130px;
+    }
+    .credenciais-trg img{
+        width: auto;
+        height: 150px;
+        margin: 0 90px;
+    }
+    .atendimento{
+        grid-template-columns: 1.45fr 1.55fr;
+        grid-template-rows: 120px 200px 1200px;
+    }
+
+    .atendimento h2{
+        font-size: 2.3rem;
+        margin: 20px 140px 20px;
+    }
+    .textogiga{
+        width: 1100px;
+    }
+    .lista-transtornos-emocionais {
+        margin: 20px 0 auto;
+    }
+    .atendimento img{
+        width: 500px;
+        margin: 60px 0;
+    }
+    .contato{
+        width: 350px;
+        height: 400px;
+    }
+    .gmail-btn-contato, .insta-btn-contato, .whats-btn-contato{
+
+        width: 200px;
+        height: 45px;
+        margin: 30px 0 12px 70px;
+    }
+
+}
+@media(min-width: 1500px){
+    .textogiga{
+        width: 1320px;
+    }
+    
+}

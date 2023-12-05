@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Dune Rise';
+    src: url(../fontes/Dune_Rise.otf) format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+
+
+*{
+    font-family: var(--font-especial);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* variáveis das fontes utilizadas no projeto: 
+        font-padrao -> para textos em geral; 
+        font-destaque -> para títulos de primeiro nível (h1); 
+        font-especial -> para botões e links; 
+        font-thinkbox -> para representar o projeto. */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-destaque: 'Lobster', cursive;
+    --font-especial: 'Poppins', sans-serif;
+    --font-thinkbox: 'Dune Rise', sans-serif;
+
+    /* variáveis para representar as cores do projeto
+    com base na paleta de cores, que está no figma: os números são em ordem crescente das cores da esquerda para a direita, de cima para baixo, conforme a imagem da paleta de cores que está no figma. */
+    --cor01: #7F3E98;
+    --cor02: #AC81BC;
+    --cor03: #CDB4D7;
+    --cor04: #F1F1F1;
+    --cor05: #CC6FAD;
+}
+
+.rodape{
+    background-color: #484848;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.icones img{
+    margin: 10px;
+}
+
+.texto p{
+    color: #fff;
+    font-family: var(--font-especial);
+    font-size: 1em;
+}
+
+.texto a{
+    text-decoration: none;
+    color: #D9AD29;
+    font-weight: normal;
+}
+
+.texto a:hover{
+    color: #d9ad2952;
+}
+
+.texto strong{
+    font-family: var(--font-thinkbox);
+    font-size: 0.75em;
+    color: #D9AD29;
+}
+
+.icones img:hover{
+    border: 1px solid var(--cor01);
+    border-radius: 100px;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 600px){
+
+    .rodape > a{
+        display: none;
+    }
+
+    .rodape{
+        flex-direction: column-reverse;
+        padding: 8px 0px;
+    }
+
+    .rodape img{
+        width: 13%;
+    }
+
+    .rodape img:hover{
+        box-shadow: 0 -2px 0px #fff inset;
+        padding: 0px;
+        border: none;
+        width: 15%;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .texto p{
+        font-size: 0.87em;
+        margin: 0;
+        padding: 0;
+    }
+}

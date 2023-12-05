@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    /* variáveis das fontes utilizadas no projeto: 
+        font-padrao -> para textos em geral; 
+        font-destaque -> para títulos de primeiro nível (h1); 
+        font-especial -> para botões e links; 
+        font-thinkbox -> para representar o projeto. */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-destaque: 'Lobster', cursive;
+    --font-especial: 'Poppins', sans-serif;
+    --font-thinkbox: 'Dune Rise', sans-serif;
+
+    /* variáveis para representar as cores do projeto
+    com base na paleta de cores, que está no figma: os números são em ordem crescente das cores da esquerda para a direita, de cima para baixo, conforme a imagem da paleta de cores que está no figma. */
+    --cor01: #7F3E98;
+    --cor02: #AC81BC;
+    --cor03: #CDB4D7;
+    --cor04: #F1F1F1;
+    --cor05: #CC6FAD;
+}
+
+@font-face {
+    font-family: 'Dune Rise';
+    src: url(../fontes/Dune_Rise.otf) format('opentype');
+    font-weight: normal;
+}
+
+@media (min-width: 320px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: #f1f1f1;
+    }
+
+    .contatos img{
+        margin-right: 10px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .contatos{
+        background-color: white;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 20px;
+        width: 80%;
+        box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .contatos h1{
+        color: var(--cor01);
+        font-family: var(--font-destaque);
+        text-align: center;
+        margin: 10px 0 20px 0;
+    }
+
+    .whats{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto 25px auto;
+        border: 1px solid #25D366;
+        border-radius: 10px;
+        padding: 5px 0;
+        color: #25D366;
+        transition: 1s;
+    }
+
+    .whats:hover{
+        background-color: #25D366;
+        color: white;
+    }
+
+    .gmail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto 25px auto;
+        border: 1px solid #C71610;
+        border-radius: 10px;
+        padding: 5px 0;
+        color: #C71610;
+        transition: 1s;
+    }
+
+    .gmail:hover{
+        background-color: #C71610;
+        color: white;
+    }
+
+    .insta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto 25px auto;
+        border: 1px solid #E1306C;
+        border-radius: 10px;
+        padding: 5px 0;
+        color: #E1306C;
+        transition: 1s;
+    }
+
+    .insta:hover{
+        background-color: #E1306C;
+        color: white;
+    }
+    
+    .contatos > p{
+        color: black;
+        font-variant: var(--font-padrao);
+        font-size: 1em;
+        padding: 0 30px;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 480px) {
+    .contatos{
+        width: 70%;
+    }
+}
+
+@media (min-width: 600px) {
+    .contatos{
+        width: 60%;
+    }
+}
+
+@media (min-width: 801px) {
+    .contatos{
+        margin: 90px auto;
+        width: 50%;
+    }
+
+    .contatos h1{
+        margin: 20px 0 40px 0;
+    }
+
+    .whats{
+        margin: 0 auto 35px auto;
+    }
+
+    .gmail{
+        margin: 0 auto 35px auto;
+    }
+
+    .insta{
+        margin: 0 auto 35px auto;
+    }
+
+    .contatos > p{
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .contatos{
+        width: 40%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .contatos{
+        width: 30%;
+    }
+
+    .contatos h1{
+        margin: 30px 0 50px 0;
+        font-size: 3em;
+    }
+
+    .whats{
+        margin: 0 auto 50px auto;
+        padding: 10px 0;
+        width: 60%;
+        font-size: 1.3em;
+    }
+
+    .gmail{
+        margin: 0 auto 50px auto;
+        padding: 10px 0;
+        width: 60%;
+        font-size: 1.3em;
+    }
+
+    .insta{
+        margin: 0 auto 50px auto;
+        padding: 10px 0;
+        width: 60%;
+        font-size: 1.3em;
+    }
+
+    .contatos > p{
+        padding: 0 100px;
+        font-size: 1.3em;
+        margin-bottom: 30px;
+    }
+}

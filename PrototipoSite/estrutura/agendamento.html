@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo-trg-sem-nome.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/agendamento.css">
+    <title>Agendar</title>
+</head>
+<body>
+    <main class="cart-agendar">
+        <h1>Agendar</h1>
+        <a href="../estrutura/conta-paciente.html">
+            <img src="../imagens/img-sair-agendar.png" alt="">
+        </a>
+        <form class="agendar">
+                <label for="data-agendar">Data :</label>
+                <input type="date" name="data-agendar" id="data-agendar" placeholder="Escolha a data da sessão">
+               
+                <label for="horario">Hora:</label>
+                <input type="time" name="horario" id="horario" placeholder="Defina um horário de início">
+               
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade de sessões desejadas">
+
+            <div class="btn">
+                <a href="#">
+                    <input type="reset" value="Apagar Tudo" class="botao-voltar">
+                </a>
+                <a href="../estrutura/conta-paciente.html" >
+                    <input type="button" value="Confirmar" class="botao-criar-conta">
+                </a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

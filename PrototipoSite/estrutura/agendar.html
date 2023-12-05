@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar</title>
+    <link rel="shortcut icon" href="../imagens/logo-trg-sem-nome.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/agendar.css">
+    <link rel="stylesheet" href="../estilo/cabecalho.css">
+    <link rel="stylesheet" href="../estilo/rodape.css">
+    <link rel="stylesheet" href="../estilo/slider-agnd.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../imagens/logo-trg-com-nome.svg" alt="Logo TRG">
+            </a>
+        </div>
+        <div class="navigation">
+
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburguer"></div>
+
+            <ul class="menu">
+                <li><a href="../index.html"><img class="img-logo-mobile" src="../imagens/logo-trg-sem-nome.svg" alt="Logo TRG"></a></li>
+                <li><a class="link-navigation" href="o-que-e-trg.html">O que é TRG?</a></li>
+                <li><a class="link-navigation" href="agendar.html">Agendar</a></li>
+                <li><a class="link-navigation" href="sobre-mim.html">Sobre mim</a></li>
+                <li>
+                    <a id="pai-logo-thinkbox" href="https://allthinkbox.github.io/thinkbox/" target="_blank" rel="external">
+                        <img id="logo-thinkbox-mobile" class="img-logo-mobile" src="../imagens/logo-thinkbox.png" alt="Logo thinkbox">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Agendamento</h1>
+        <article>
+            <p>
+                Não perca tempo, agende agora mesmo e aproveite os benefícios de ter sua consulta ou serviço agendado com antecedência. <strong>Invista</strong> na sua <strong>saúde emocional</strong>!
+            </p>
+        </article>
+        <div  class="credenciais-trg">
+            <img src="../imagens/cliente.png" alt="Foto da terapeuta">
+            <p><strong>Valdeneide Sena</strong></p>
+            <p>Registro CITRG: 02.811</p>
+        </div>
+    </main>
+<!-- SEÇÃO DE  PACOTES DE SESSÕES -->
+    <section class="agendar">
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <div id="card-padrao">
+                        <h1>Padrão</h1>
+                        <h2><del>R$750.00</del><sup>-20%</sup></h2>
+                        <h2 class="preco">R$600.00</h2>
+                        <p>Descubra o caminho para o equilíbrio emocional com a nossa promoção imperdível! Agora, você pode garantir um pacote exclusivo de 5 sessões de terapia com um incrível desconto de 20%. Imagine a transformação que você pode alcançar ao investir em seu bem-estar mental e emocional. Não deixe passar essa oportunidade de cuidar de si mesmo, economizando ao mesmo tempo. Reserve agora e comece sua jornada para uma mente saudável com desconto e qualidade incomparáveis!</p>
+                        <a href="../estrutura/entrar-na-conta.html" target="_blank" rel="external">
+                            <div id="btn-card-padrao">Agendar</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="card-especial">
+                        <h1>Especial</h1>
+                        <h2><del>R$750.00</del><sup>-30%</sup></h2>
+                        <h2 class="preco">R$525.00</h2>
+                        <p>Celebre o seu mês especial de aniversário com um presente que realmente importa: cuidado e bem-estar emocional. Nossa promoção exclusiva oferece um desconto imperdível de 30% em um pacote de 5 sessões de terapia personalizada. Imagine aproveitar um tempo dedicado a si mesmo, explorando suas metas e superando desafios. Essa é a sua oportunidade de investir em um futuro mais saudável e feliz. Reserve agora para garantir sua oferta única no mês do seu aniversário e comece um novo ano de vida com mente e coração renovados.</p>
+                        <a href="../estrutura/entrar-na-conta.html" target="_blank" rel="external">
+                            <div id="btn-card-especial">Agendar</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="card-avulso">
+                        <h1>Avulso</h1>
+                        <h2 class="preco">R$150.00</h2>
+                        <p>Descubra o poder da transformação pessoal com a nossa oferta excepcional de sessões de terapia avulsas. Por apenas R$150.00, você terá acesso a uma experiência terapêutica que pode desbloquear o seu potencial máximo e promover um bem-estar duradouro. Prepare-se para uma jornada de autodescoberta e crescimento emocional. Não perca a oportunidade de investir em si mesmo e aproveitar os benefícios de uma sessão de terapia de alta qualidade. Reserve agora e dê o primeiro passo em direção a uma vida mais saudável e plena.</p>
+                        <a href="../estrutura/entrar-na-conta.html" target="_blank" rel="external">
+                            <div id="btn-card-avulso">Agendar</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="agendar-desktop">
+        <div class="box-cards">
+            <div id="card-padrao-desktop">
+                <h1>Padrão</h1>
+                <h2><del>R$750.00</del><sup>-20%</sup></h2>
+                <h2 class="preco-desktop">R$600.00</h2>
+                <p>Descubra o caminho para o equilíbrio emocional com a nossa promoção imperdível! Agora, você pode garantir um pacote exclusivo de 5 sessões de terapia com um incrível desconto de 20%. Imagine a transformação que você pode alcançar ao investir em seu bem-estar mental e emocional. Não deixe passar essa oportunidade de cuidar de si mesmo, economizando ao mesmo tempo. Reserve agora e comece sua jornada para uma mente saudável com desconto e qualidade incomparáveis!</p>
+                <a href="../estrutura/entrar-na-conta.html" target="_blank" rel="external">
+                    <div id="btn-card-padrao-desktop">Agendar</div>
+                </a>
+            </div>
+            <div id="card-especial-desktop">
+                <h1>Especial</h1>
+                <h2><del>R$750.00</del><sup>-30%</sup></h2>
+                <h2 class="preco-desktop">R$525.00</h2>
+                <p>Celebre o seu mês especial de aniversário com um presente que realmente importa: cuidado e bem-estar emocional. Nossa promoção exclusiva oferece um desconto imperdível de 30% em um pacote de 5 sessões de terapia personalizada. Imagine aproveitar um tempo dedicado a si mesmo, explorando suas metas e superando desafios. Essa é a sua oportunidade de investir em um futuro mais saudável e feliz. Reserve agora para garantir sua oferta única no mês do seu aniversário e comece um novo ano de vida com mente e coração renovados.</p>
+                <a href="../estrutura/entrar-na-conta.html" target="_blank" rel="external">
+                    <div id="btn-card-especial-desktop">Agendar</div>
+                </a>
+            </div>
+            <div id="card-avulso-desktop">
+                <h1>Avulso</h1>
+                <h2 class="preco-desktop">R$150.00</h2>
+                <p>Descubra o poder da transformação pessoal com a nossa oferta excepcional de sessões de terapia avulsas. Por apenas R$150.00, você terá acesso a uma experiência terapêutica que pode desbloquear o seu potencial máximo e promover um bem-estar duradouro. Prepare-se para uma jornada de autodescoberta e crescimento emocional. Não perca a oportunidade de investir em si mesmo e aproveitar os benefícios de uma sessão de terapia de alta qualidade. Reserve agora e dê o primeiro passo em direção a uma vida mais saudável e plena.</p>
+                <a href="../estrutura/entrar-na-conta.html" target="_blank" rel="external">
+                    <div id="btn-card-avulso-desktop">Agendar</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- SEÇÃO ATENDIMETOS -->
+    <section class="atendimento">
+        <h2>Atendimento online</h2>
+        <p id="central-line">Tratamento de transtornos emocionais:</p>
+        <!-- CONFIGURAÇÃO DA LISTA DE TRANSTORNOS -->
+        <div class="transtornos-emocionais">
+            <ul class="lista-transtornos-emocionais">
+                <li>Síndrome do Pânico</li>
+                <li>Ansiedade</li>
+                <li>Depressão</li>
+                <li>Fobias</li>
+            </ul>
+            <ul class="lista-transtornos-emocionais">
+                <li>Medos</li>
+                <li>Traumas</li>
+                <li>Insônia</li>
+                <li>E outros</li>
+            </ul>
+        </div>
+        <!-- FIM DA CONIFIGURAÇÃO DA LISTA DE TRANSTORNOS -->
+
+        <img src="../imagens/terapeuta-e-cliente.svg" alt="Paciente conversando com o terapeuta">
+        <div class="textogiga">
+            <h2>O poder de transformação da TRG</h2>
+            <p>
+                A terapia desempenha um papel fundamental na saúde mental e no bem-estar emocional. A importância de fazer terapia é que nos dá a oportunidade de explorar e compreender nossos pensamentos, emoções e comportamentos de maneira mais profunda e significativa. Ao entrar em um espaço terapêutico seguro e confidencial, podemos enfrentar desafios pessoais, superar traumas passados, desenvolver habilidades saudáveis que irão promover mudanças positivas em nossas vidas.
+            </p>
+            <p>
+                Um dos principais benefícios da terapia é a oportunidade de autoconhecimento. Durante as sessões terapêuticas, somos incentivados a examinar nossas crenças, padrões de pensamento e emoções, o que nos permite entender melhor quem somos e por que agimos de certas maneiras. Esse processo de autoconhecimento nos ajuda a identificar e desafiar pensamentos distorcidos, superar crenças limitantes e promover uma maior consciência de nós mesmos.
+            </p>
+            <p>
+                A terapia proporciona apoio e validação emocional. Muitas vezes, enfrentamos dificuldades e desafios na vida que podem ser desafiadores e difíceis de lidar sozinhos. Ter um terapeuta experiente ao nosso lado oferece suporte emocional e nos permite expressar livremente nossos sentimentos, sem medo de julgamentos. O terapeuta atua como um ouvinte atento e empático, ajudando-nos a processar nossos traumas e trazendo alívio emocional.
+            </p>
+            <p>
+                Além disso, a terapia nos capacita com ferramentas e habilidades práticas para enfrentar as dificuldades da vida. Dependendo da abordagem terapêutica utilizada, podemos aprender técnicas de relaxamento, habilidades de comunicação, resolução de conflitos e outras ferramentas valiosas. Essas habilidades nos permitem lidar melhor com o estresse, melhorar nossos relacionamentos e enfrentar desafios de maneira mais saudável e eficaz.
+            </p>
+            <p>
+                A terapia também desempenha um papel crucial na cura de traumas e no tratamento de transtornos mentais. O terapeuta treinado pode ajudar a identificar e tratar traumas passados, transtornos de ansiedade, depressão, transtornos alimentares, vícios e outras condições de saúde mental. Com o apoio adequado, podemos encontrar alívio do sofrimento, recuperar nossa saúde mental e reconstruir uma vida mais plena e significativa.
+            </p>
+            <p>
+                Por fim, a terapia nos deixa mais leve, promove o crescimento pessoal e o desenvolvimento do potencial humano. Ao nos envolvermos em um processo terapêutico, temos a oportunidade de nos tornarmos a melhor versão de nós mesmos. A terapia nos incentiva a explorar nossos valores, metas e propósitos, e a tomar decisões alinhadas e saudáveis. Fazer terapia nos ajuda a desenvolver resiliência, autoconfiança e autenticidade.
+            </p>
+            <p>
+                Em resumo, a terapia é essencial para cuidar da nossa saúde mental, enfrentar desafios pessoais, promover mudanças positivas e alcançar um maior bem-estar emocional. É um investimento &#10084;&#65039;.
+            </p>
+        </div>
+    </section>
+    
+    <footer class="rodape">
+        <div class="icones">
+            <a href="mailto:valdeneidepereira925@gmail.com" target="_blank" rel="external"><img src="../imagens/ico-gmail.png" alt="Ícone do Gmail"></a>
+            <a href="https://www.instagram.com/valdeneide_sena/" target="_blank" rel="external"><img src="../imagens/ico-instagram.png" alt="Ícone do Instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=5511974429799" target="_blank" rel="external"><img src="../imagens/ico-whatsapp.png" alt="Ícone do WhatsApp"></a>
+        </div>
+        <div class="texto">
+            <p>Site desenvolvido por <a id="thinkbox" href="https://allthinkbox.github.io/thinkbox/" target="_blank"
+                rel="external"><strong>thinkbox</strong></a> - 2023</p>
+        </div>
+        <div class="logo-footer">
+            <a href="../index.html"><img src="../imagens/logo-trg-sem-nome.svg" alt="Logo TRG"></a>
+        </div>
+    </footer>
+    <script src="../dinamica/slider-agendar.js"></script>
+</body>
+</html>
