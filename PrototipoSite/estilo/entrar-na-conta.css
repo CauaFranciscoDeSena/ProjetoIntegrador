@@ -107,18 +107,18 @@ p >a{
     color: var(--cor01);
 }
 
-@media (min-width: 1251px){
+@media (min-width: 1250px){
     h1{
         padding: 7% 0 0;
     }
     form{
-        padding: 10% 0;
+        padding: 1% 0;
     }
 }
 
 @media (min-width: 1440px){
     h1{
-        padding: 10% 0 0;
+        padding: 1% 0 0;
     }
     form{
         padding: 10% 0;
