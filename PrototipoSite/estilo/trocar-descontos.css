@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    /* variáveis das fontes utilizadas no projeto: 
+        font-padrao -> para textos em geral; 
+        font-destaque -> para títulos de primeiro nível (h1); 
+        font-especial -> para botões e links; 
+        font-thinkbox -> para representar o projeto. */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-destaque: 'Lobster', cursive;
+    --font-especial: 'Poppins', sans-serif;
+    --font-thinkbox: 'Dune Rise', sans-serif;
+
+    /* variáveis para representar as cores do projeto
+    com base na paleta de cores, que está no figma: os números são em ordem crescente das cores da esquerda para a direita, de cima para baixo, conforme a imagem da paleta de cores que está no figma. */
+    --cor01: #7F3E98;
+    --cor02: #AC81BC;
+    --cor03: #CDB4D7;
+    --cor04: #F1F1F1;
+    --cor05: #CC6FAD;
+}
+
+@font-face {
+    font-family: 'Dune Rise';
+    src: url(../fontes/Dune_Rise.otf) format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1050px){
+    body{
+        background-color: var(--cor04);
+    }
+    img{
+        position: absolute;
+        right: 17%;
+        top: 11.1%;
+    }
+    main{
+        margin:1% auto;
+        background-color: white;
+        width: 70%;
+        height: 90vh;
+        border-radius: 20px;
+    }
+      
+    h1{
+        padding: 5% 0 2%;
+        text-align: center;
+        font: 2em light, var(--font-especial);
+        text-transform: uppercase;
+        color: var(--cor01);
+    }
+
+    h2{
+        margin: 4% auto;
+        text-align: center;
+        font: 1.4em normal, var(--font-destaque);
+        text-transform: capitalize;
+        color: var(--cor01);
+    }
+
+    .pai-cards-desconto{
+        width: 100%;
+        height: 50vh;
+        margin: 4% auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cards-desconto{
+        width: 24%;
+        height: 55vh;
+        border-radius: 20px;
+        border: 1.4vh solid var(--cor04);
+        box-shadow: 2px 3px 10px 2px var(--cor01);
+        background-color: var(--cor03);
+    }
+
+    form{
+        width: 95%;
+        margin:30% auto 0;
+    }
+
+    form p{
+        margin: 13% 0 16%;
+        font: 1em light, var(--font-especial);
+        text-transform: capitalize;
+        color: var(--cor01);
+    }
+
+    label{
+        font: 0.9em light, var(--font-especial);
+        width: 50%;
+        color: var(--cor01);
+    }
+
+    input{
+        width: 29%;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--cor04);
+        padding: 2%;
+        margin: 1.6% 0;
+    }
+        
+    .btn{
+        width: 100%;
+        margin: 10% auto 0;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    a{
+        width: 60%;
+    }
+    
+    .botao-criar-conta, .botao-voltar{
+        width: 100%;            
+        color: white;
+        padding: 6% 0;
+    }  
+
+    .botao-voltar{
+        background-color: #C9201B;
+        margin-bottom: 15%;
+    }
+
+    .botao-criar-conta{
+        background-color: var(--cor01);   
+    }    
+}
+@media (min-width: 1251px){
+    main{
+        font-size: 1.2em;
+    }
+    form{
+        padding: 10% 0;
+    }
+    .btn{
+        padding: 10% 0;
+    }
+}
+@media (min-width: 1440px){
+
+}

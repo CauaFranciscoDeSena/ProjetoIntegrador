@@ -79,7 +79,7 @@
         justify-content: space-evenly;
     }
     .bg-roxo p, .bg-roxo textarea, .bg-lilas p, .bg-lilas textarea{
-        margin: 0 11%;
+        margin: 1% 11%;
         border-radius: 7px;
     }
 
@@ -92,11 +92,11 @@
         margin: 0 auto;
     }
     .infos-sessao p {
+        font-size: 0.9em;
         margin:auto 2%;
     }
     
     .cart-nova-sessao{
-        font-size: 1.36em;
         text-transform: capitalize;
         display: flex;
         flex-flow: row wrap;

@@ -56,6 +56,15 @@
         padding: 3%;
     }
     
+    a,a:active, a:visited{
+        text-decoration: none;
+    }
+    
+    a p:hover, a img:hover{
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
     .cart-nova-sessao img{
         width: 80%;
         height: auto;
@@ -103,11 +112,11 @@
         margin: 0 auto;
     }
     .infos-sessao p {
+        font-size: 0.9em;
         margin:auto 2%;
     }
     
     .cart-nova-sessao{
-        font-size: 1.36em;
         text-transform: capitalize;
         display: flex;
         flex-flow: row wrap;
@@ -138,13 +147,14 @@
 }
 
 .pai-configs-valor{
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .trocar-valor, .trocar-descontos, .reembolsar{
-    height: 50vh;
+    height: 100%;
     width: 25%;
     align-content: center;
     text-align: center;
@@ -153,13 +163,17 @@
 }
 
 .trocar-valor img, .trocar-descontos img, .reembolsar img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
+.trocar-valor img{
+    margin-top: 10%;
+}
+
 .trocar-valor p, .trocar-descontos p, .reembolsar p{
     margin: 10% auto 0;
     width: 70%;
-    font: 2rem bold, var(--font-especial);
+    font: 1.4em bold, var(--font-especial);
     text-transform: capitalize;
     color: #fff;
 }
