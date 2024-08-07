@@ -35,6 +35,12 @@
 
 
 @media (min-width: 1025px){
+    span{
+        font: 1em normal, var(--font-padrao);
+        color: #C9201B;
+        visibility: hidden;
+    }
+
     body{
         font-family: var(--font-especial);
         font-size: 1rem;
@@ -77,6 +83,14 @@
     label{
         margin: 5% 0 0;
     }
+
+    .form-content.error span{
+        color: #C9201B;
+        visibility: visible;
+    }
+    .form-content.error input{
+        border: 1px solid #C9201B;
+    }
     .btn{
         width: 80%;
         margin: 15% 0 0;
@@ -92,7 +106,9 @@
         padding: 6% 0;
         background-color: #C9201B;
     }
-    .botao-criar-conta{
+    
+    button{
+        width: 50%;
         color: white;
         padding: 6% 0;
         background-color: var(--cor01);   
