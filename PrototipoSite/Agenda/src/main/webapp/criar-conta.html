@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo-trg-sem-nome.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/criar-conta.css">
+    <title>Criar Conta</title>
+</head>
+<body>
+    <main>
+        <h1>Criar Conta</h1>
+
+        <form id="form-cadastro">
+           <div class="form-content">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+            <span></span>
+           </div>
+           <div class="form-content">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            <span></span>
+           </div>
+            <div class="form-content">
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <span></span>
+            </div>
+           <div class="form-content">
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento" placeholder="Informe sua data de nascimento">
+            <span></span>            
+            </div>
+    
+            <div class="form-content">
+                <label for="telefone">Contato:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Informe o seu número de celular">
+                <span></span>    
+            </div>
+            
+
+            <div class="btn">
+                <a href="../index.html">
+                    <input type="button" value="Voltar" class="botao-voltar">
+                </a>
+
+                <button type="submit" value="Criar Conta" class="botao-criar-conta">Cadastrar</button>
+            </div>
+        </form>
+        <p>Já tem uma conta ? Clique em <a href="../estrutura/entrar-na-conta.html">Entrar na conta</a></p>
+    </main>
+    <script src="../dinamica/validacoes.js"></script>
+</body>
+</html>

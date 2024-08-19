@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo-trg-sem-nome.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/reembolso.css">
+    <title>Reembolsar Paciente</title>
+</head>
+<body>
+    <main>
+        <h1>Reembolsar</h1>
+        <a href="../estrutura/conta-terapeuta.html">
+            <img src="../imagens/img-sair-agendar.png" alt="">
+        </a>
+        <form class="nome-pessoa-reembolsada">
+                <label for="nome-pessoa">Nome do(a) paciente:</label>
+                <input type="text" name="nome-pessoa" id="nome-pessoa" placeholder="Escreva o nome do(a) cliente">
+               
+                <label for="valor-a-pagar">Valor a ser devolvido:</label>
+                <input type="number" name="valor" id="valor" placeholder="Informe o valor a ser devolvido">
+
+            <div class="btn">
+                <a href="#">
+                    <input type="reset" value="Apagar Tudo" class="botao-voltar">
+                </a>
+                <a href="../estrutura/conta-terapeuta.html" >
+                    <input type="button" value="Confirmar" class="botao-criar-conta">
+                </a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

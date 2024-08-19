@@ -1,0 +1,14 @@
+CREATE DATABASE Agenda;
+show databases;
+use Agenda;
+create table contatos(
+	idcon int primary key auto_increment,
+	nome varchar(50) not null,
+	fone varchar(15) not null,
+	email varchar(50) not null,
+    dataConsulta DATE not null,
+    horaConsulta TIME not null,
+    UNIQUE (dataConsulta, horaConsulta) -- Garante que não haverá consultas duplicadas no mesmo horário
+);
+/* CRUD READ */
+select * from contatos;

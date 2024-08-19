@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="estilo/novo.css">
+    <script src="scripts/validador.js" defer></script> <!-- Incluindo o script de validação -->
+</head>
+<body>
+    <h1>Agendar Terapia</h1>
+    <form name="frmContato" action="insert" method="post" onsubmit="return validar();">
+        <table>
+            <tr>
+                <td><input type="text" name="nome" placeholder="Nome" class="Caixa1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="fone" placeholder="Fone" class="Caixa2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="email" placeholder="E-mail" class="Caixa1"></td>
+            </tr>
+            <tr>
+                <td><input type="date" name="dataConsulta" placeholder="Data da Consulta" class="Caixa1"></td>
+            </tr>
+            <tr>
+                <td><input type="time" name="horaConsulta" placeholder="Hora da Consulta" class="Caixa2"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Agendar" class="Botao">
+        </form>
+</body>
+</html>

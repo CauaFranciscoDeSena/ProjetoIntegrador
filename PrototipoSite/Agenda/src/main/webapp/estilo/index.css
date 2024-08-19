@@ -1,0 +1,628 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    /* variáveis das fontes utilizadas no projeto: 
+        font-padrao -> para textos em geral; 
+        font-destaque -> para títulos de primeiro nível (h1); 
+        font-especial -> para botões e links; 
+        font-thinkbox -> para representar o projeto. */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-destaque: 'Lobster', cursive;
+    --font-especial: 'Poppins', sans-serif;
+    --font-thinkbox: 'Dune Rise', sans-serif;
+
+    /* variáveis para representar as cores do projeto
+    com base na paleta de cores, que está no figma: os números são em ordem crescente das cores da esquerda para a direita, de cima para baixo, conforme a imagem da paleta de cores que está no figma. */
+    --cor01: #7F3E98;
+    --cor02: #AC81BC;
+    --cor03: #CDB4D7;
+    --cor04: #F1F1F1;
+    --cor05: #CC6FAD;
+}
+
+@font-face {
+    font-family: 'Dune Rise';
+    src: url(../fontes/Dune_Rise.otf) format('opentype');
+    font-weight: normal;
+}
+
+@media (min-width:320px) {
+    body{
+        text-align: justify;
+        background-color: var(--cor04);
+    }
+    .txt-responsivo-desktop{
+        display: none;
+    }
+
+    .sessao-principal-desktop{
+        display: none;
+    }
+
+    .agendar-desktop{
+        display: none;
+    }
+
+    /*BANNER "TERAPIA DE REPROCESSAMENTO GENERATIVO"*/
+    .banner-img{
+        width: 100%;
+        display: flex;
+    }
+    /*FIM BANNER "TERAPIA DE REPROCESSAMENTO GENERATIVO"*/
+
+    .sessao-principal{
+        overflow: hidden;
+    }
+
+    h1{
+        font-family: var(--font-destaque);
+        color: var(--cor01);
+        font-size: 1.9em;
+        margin-bottom: 15px;
+        padding: 0 30px;
+    }
+
+    h2{
+        font-family: var(--font-destaque);
+        font-size: 1.6;
+        text-align: center;
+        color: white;
+    }
+
+    h3{
+        margin: 10px 0;
+        font-family: var(--font-especial);
+        color: var(--cor02);
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    p{
+        color: black;
+        font-family: var(--font-padrao);
+        font-size: 1em;
+        line-height: 25px;
+        margin-bottom: 10px;
+        padding: 0 30px;
+    }
+
+    /*HOME*/
+
+    .quadrado{
+        background-color: white;
+        width: 100%;
+        height: 393px;
+    }
+
+    .elipse{
+        background-color: white;
+        width: 147%;
+        height: 367px;
+        border-radius: 50%;
+        position: relative;
+        z-index: -1;
+        top: -110px;
+        transform: rotate(329deg);
+        left: -76px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .btn-saiba-mais{
+        margin: 22px 0px 30px 30px;
+        width: 116px;
+        height: 32px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: var(--cor01);
+        border: 1px solid var(--cor01);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+    }
+
+    .btn-saiba-mais a{
+        color: white;
+        text-decoration: none;
+    }
+    /*FIM  HOME*/
+
+    /*DEPOIMENTOS*/
+    .depoimentos{
+        margin: 0 auto 70px auto;
+        width: 100%;
+        height: 680px;
+        overflow: hidden;
+        background-color: var(--cor01);
+        padding: 30px 0;
+    }
+
+    .underline{
+        display: block;
+        margin: 0 auto 30px auto;
+        width: 44%;
+    }
+
+    .slides{
+        width: 400%;
+        height: 286px;
+        display: flex;
+    }
+
+    .slides input{
+        display: none;
+    }
+
+    .slide{
+        width: 25%;
+        position: relative;
+        transition: 2s;
+    }
+
+    .slide iframe{
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .manual-navigation{
+        position: absolute;
+        width: 100%;
+        margin-top: 228px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn{
+        border: 2px solid #ffffff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover{
+        background-color: #FFF;
+    }
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first{
+        margin-left: -25%;
+    }
+
+    .navigation-auto div{
+        border: 2px solid #20a6ff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 514px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: #FFF;
+    }
+
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: #FFF;
+    }
+    /*FIM DEPOIMENTOS*/
+
+
+    /*AGENDAR (HOME)*/
+
+    /*INFORMAÇÕES PARA USUÁRIOS COM DÚVIDAS*/
+    aside{
+        margin: 50px auto;
+        background-color: rgba(205, 180, 215, 0.27);        ;
+        border-top: 2px solid var(--cor02);
+        border-bottom: 2px solid var(--cor02);
+    }
+
+    aside p{
+        font-size: 0.7em;
+        text-align: justify;
+        line-height: 20px;
+        padding: 0 10px;
+        margin: 0;
+        font-family: var(--font-padrao);
+    }
+    /*BOTÃO PARA O WHATSAPP DA CLIENTE - SEÇÃO DOS USUÁRIOS COM DÚVIDAS*/
+    aside a{
+        font-weight: normal;
+        color: var(--cor05);
+        text-decoration: none;
+    }
+    .zap-link{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        column-gap: 10px;
+        width: 300px;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .zap-link{
+        margin: 10px 0;
+        padding: 0 10px;
+        color: var(--cor05);
+        font-family: var(--font-padrao);
+        font-size: 0.7em;
+        color: var(--cor05);
+    }
+    
+    .img-motivação{
+        width: 80%;
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+
+    /*BOTÃO "AGENDAR" DA HOME DO SITE*/
+    .agendar-index{
+        width: 120px;
+        height: 32px;
+        border-radius: 20px;
+        background-color: var(--cor01);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto 40px auto;
+    }
+    .agendar-index a{
+        color: var(--cor04);
+        text-decoration: none;
+    }
+    /*FIM AGENDAR (HOME)*/
+}
+
+@media (min-width: 366px){
+    .quadrado{
+        height: 298px;
+    }
+
+    .elipse{
+        width: 160%;
+        top: -135px;
+        left: -89px;
+    }
+}
+
+@media (min-width: 390px){
+
+    .elipse{
+        width: 183%;
+        top: -201px;
+        left: -90px;
+    }
+}
+
+@media (min-width:480px) {
+    h1{
+        margin: 0px 0px 15px 0px;
+        padding: 0 40px;
+    }
+
+    p{
+        line-height: 30px;
+        margin-bottom: 15px;
+        padding: 0 40px;
+    }
+
+    .quadrado{
+        height: 374px;
+    }
+
+    .elipse{
+        width: 160%;
+        top: -189px;
+        left: -121px;
+        transform: rotate(331deg);
+    }
+
+    .underline{
+        display: block;
+        margin: 0 auto 30px auto;
+        width: 34%;
+    }
+
+    .btn-saiba-mais{
+        margin: 30px 0px 30px 50px;
+    }
+
+    aside{
+        padding: 30px;
+    }
+
+    .img-motivação{
+        margin: 30px auto;
+    }
+
+}
+
+@media (min-width: 530px){
+    .quadrado{
+        height: 400px;
+    }
+
+    .elipse{
+        width: 213%;
+        top: -337px;
+        left: -130px;
+        transform: rotate(331deg);
+    }
+}
+
+
+@media (min-width:600px) {
+
+    .quadrado{
+        height: 400px;
+    }
+
+    .elipse{
+        top: -389px;
+        width: 251%;
+        transform: rotate(155deg);
+        left: -144px;
+    }
+
+    .underline{
+        width: 30%;
+    }
+
+    h2{
+        font-size: 1.9em;
+    }
+    
+    aside p{
+        font-size: 0.9em;
+        line-height: 25px;
+        padding: 0 15px;
+    }
+
+    .zap-link{
+        font-size: 0.9em;
+        padding: 0 15px;
+        margin: 10;
+    }
+
+    .zap-link:hover{
+        color: var(--cor02);
+    }
+
+    .img-motivação{
+        width: 60%;
+    }
+}
+
+@media (min-width: 647px){
+    .quadrado{
+        height: 400px;
+    }
+
+    .elipse{
+        top: -439px;
+        width: 352%;
+        transform: rotate(164deg);
+        left: -333px;
+    }
+}
+
+@media (min-width:801px) {
+
+    .txt-responsivo-desktop{
+        display: block;
+    }
+
+    .sessao-principal{
+        display: none;
+    }
+    .sessao-principal-desktop{
+        display: block;
+        overflow: hidden;
+        height: 550px;
+    }
+
+    .sessao-principal-desktop img{
+        width: 120%;
+    }
+
+    .container-textos-desktop{
+        position: relative;
+        z-index: 0;
+        top: -489px;
+        padding: 0 95px 0 0;
+    }
+    .img-motivação{
+        width: 45%;
+    }
+    aside{
+        width: 460px;
+        border: 1px solid var(--cor01);
+        background-color: var(--cor04);
+    }
+
+    p{
+        line-height: 35px;
+        margin-bottom: 20px;
+        padding: 0 60px;
+    }
+
+    .btn-saiba-mais{
+        margin: -15px 0px 1px 175px;
+    }
+
+    .underline{
+        width: 20%;
+    }
+
+    .agendar{
+        display: none;
+    }
+
+    .img-motivação{
+        width: 30%;
+    }
+
+    .agendar-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 50px;
+        margin-bottom: 10px;
+    }
+
+    .agendar-index{
+        margin: 90px auto;
+    }
+}
+
+@media (min-width:1025px) {
+    .container-textos-desktop{
+        top: -572px;
+    }
+
+    .btn-saiba-mais{
+        margin: 25px 0px 1px 175px;
+        background-color: transparent;
+        border: 2px solid var(--cor01);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+    }
+
+    .btn-saiba-mais:hover{
+        background-color: var(--cor01);
+    }
+
+    .btn-saiba-mais a{
+        color: var(--cor01);
+        text-decoration: none;
+    }
+
+    .btn-saiba-mais a:hover{
+        color: white;
+    }
+
+    .agendar-index{
+        background-color: transparent;
+        border: 2px solid var(--cor01);
+        transition: 2s;
+    }
+
+    .agendar-index:hover{
+        background-color: var(--cor01);
+    }
+
+    .agendar-index a{
+        color: var(--cor01);
+    }
+
+    .agendar-index a:hover{
+        color: white;
+    }
+
+    .sessao-principal-desktop{
+        height: 700px;
+    }
+
+    iframe{
+        width: 350px;
+        height: 550px;
+    }
+
+    .depoimentos{
+        height: 800px;
+        padding: 40px 0;
+    }
+
+    .manual-navigation{
+        margin-top: 324px;
+    }
+
+    .navigation-auto{
+        margin-top: 610px;
+    }
+}
+@media (min-width:1251px) {
+    h1{
+        padding: 0 0 0 60px;
+        margin-bottom: 30px;
+    }
+
+    .sessao-principal-desktop{
+        height: 800px;
+    }
+
+    .container-textos-desktop{
+        top: -697px;
+        padding: 0 250px 0 0;
+    }
+
+    .btn-saiba-mais{
+        margin: 30px 0 30px 200px;
+        width: 216px;
+        height: 42px;
+    }
+
+    .agendar-index{
+        width: 216px;
+        height: 42px;
+    }
+
+    p{
+        line-height: 40px;
+        margin-bottom: 25px;
+        padding: 0 60px;
+    }
+}
+
+@media (min-width: 1440px){
+    .sessao-principal-desktop img{
+        width: 100%;
+    }
+
+    .container-textos-desktop{
+        top: -721px;
+        padding: 0 525px 0 0;
+    }
+
+    p{
+        line-height: 40px;
+        margin-bottom: 25px;
+        padding: 0 60px;
+        font-size: 1.5em;
+    }
+
+}
+@media (min-width: 1600px){
+    .sessao-principal-desktop{
+        height: 850px;
+    }
+}
